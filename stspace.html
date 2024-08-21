@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .container {
+      padding: 2rem;
+      margin: 10px 400px 10px 400px;
+    }
+
+    .card {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      border: none;
+      margin-bottom: 2rem;
+      background-color: #fff;
+    }
+
+    .card-header {
+      background-color: #f8f9fa;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid #e3e7eb;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+      size: 20%;
+      
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: .5rem;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+    }
+    .btn-secondary {
+      background-color: rgb(151, 149, 149);
+      border-color: rgb(151, 149, 149);
+      color: #fff;
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+    }
+    .container:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("collegepic.jpg");  
+      background-size: cover;
+      background-position: center;
+      z-index: -100; 
+      opacity: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-7">
+        <div class="card">
+          <center>
+          <div class="card-header"><h1>Student Registration</h1></div>
+          </center>
+          <div class="card-body">
+            <p>Fill this Registration form carefully and correct information</p>
+            <form id="student-form">
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="full-name" name="full-name" required>
+              </div>
+              <div class="form-group">
+                <label for="department" class="form-label">Department *</label>
+                <select class="form-control" id="department" name="department" required>
+                  <option value="">Select Department</option>
+                  <option value="CS">Computer Science Engineering</option>
+                  <option value="EC">Electronic and Communication</option>
+                  <option value="Mech">Mechanical Engineering</option>
+                  <option value="Civil">Civil Engineering</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                <label for="regno" class="form-label">Registration no *</label>
+                <input type="text" class="form-control" id="position" name="position">
+              </div>
+              <div class="form-group">
+                <label for="pwd" class="form-label">Password *</label>
+                <input type="password" class="form-control" id="position" name="position">
+              </div>
+              <center>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset"  class="btn btn-secondary">Reset</button>
+              </center>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
